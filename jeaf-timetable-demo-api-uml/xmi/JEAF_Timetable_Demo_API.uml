@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:JMM="http://JMM/_11_5_1ab00d4_1164055757453_405595_1" xmlns:MagicDrawProfile="http://UML_Standard_Profile/MagicDraw_Profile/_be00301_1073394351331_445580_2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http://JMM/_11_5_1ab00d4_1164055757453_405595_1 JMM.profile.uml#_wKtMwg2BEfGMJ_pXoEL-UQ http://UML_Standard_Profile/MagicDraw_Profile/_be00301_1073394351331_445580_2 UML_Standard_Profile.MagicDraw_Profile.profile.uml#_wKfKlw2BEfGMJ_pXoEL-UQ">
+  <uml:Model xmi:id="c26db9ff-c3d3-41ca-857e-c290e8beed0f" name="Model" clientDependency="93a27562-4954-4d8c-9cb8-2e8bb93af6a1 b57c511e-b5c1-4f57-a3e6-7e2940544c99" viewpoint="">
+    <ownedComment xmi:id="e03857a5-e80b-4652-bc9a-37b058a01865" body="Author:ue58027.&#xA;Created:15.03.2023 10:17.&#xA;Title:.&#xA;Comment:.&#xA;" annotatedElement="c26db9ff-c3d3-41ca-857e-c290e8beed0f"/>
+    <packageImport xmi:id="_0primitiveTypesModel">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_0javaPrimitiveTypesModel">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="9534ccda-35e3-48ea-a289-0dc865ad6389usedProjectModel">
+      <importedPackage xmi:type="uml:Model" href="Java_constraints.uml#9534ccda-35e3-48ea-a289-0dc865ad6389"/>
+    </packageImport>
+    <packageImport xmi:id="8e508176-9929-4d7c-8a99-a4336b833377usedProjectModel">
+      <importedPackage xmi:type="uml:Model" href="Java_Profile.uml#8e508176-9929-4d7c-8a99-a4336b833377"/>
+    </packageImport>
+    <packageImport xmi:id="e0b7534d-bed8-42b8-ba5a-ed6e00d70c4cusedProjectModel">
+      <importedPackage xmi:type="uml:Model" href="JEAF_Generator_Metamodel.uml#e0b7534d-bed8-42b8-ba5a-ed6e00d70c4c"/>
+    </packageImport>
+    <packageImport xmi:id="44ae9175-b752-4f8d-b190-983a65a6de12usedProjectModel">
+      <importedPackage xmi:type="uml:Model" href="Java_Extensions.uml#44ae9175-b752-4f8d-b190-983a65a6de12"/>
+    </packageImport>
+    <packageImport xmi:id="a0aa1fdc-3aae-4c51-9892-c215f623a718usedProjectModel">
+      <importedPackage xmi:type="uml:Model" href="UML_Standard_Profile.uml#a0aa1fdc-3aae-4c51-9892-c215f623a718"/>
+    </packageImport>
+    <packageImport xmi:id="9cecbd4c-f58e-419a-9376-17a8c2f43ebfusedProjectModel">
+      <importedPackage xmi:type="uml:Model" href="Java_SE_8_Library.uml#9cecbd4c-f58e-419a-9376-17a8c2f43ebf"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="0bf1c202-6203-45e6-822f-c0937d1fcd8a" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="9a71841f-9320-4ae1-bc59-73e4d9254d56" name="anaptecs">
+        <packagedElement xmi:type="uml:Package" xmi:id="de8c132a-5da0-4da8-abe4-558a33cf3361" name="jeaf">
+          <packagedElement xmi:type="uml:Package" xmi:id="e9d1e19f-e532-4dd9-ac96-b22ba9f9270c" name="timetable">
+            <packagedElement xmi:type="uml:Package" xmi:id="d362e111-0533-48b9-bc8c-7d62f4c8e598" name="api">
+              <packagedElement xmi:type="uml:Interface" xmi:id="df8456de-86f5-4224-8ee1-fcf3b95695c1" name="TimetableService">
+                <ownedOperation xmi:id="6fb3bb52-72f9-491c-8f54-eb283a8d9c23" name="executeTripSearch" visibility="public">
+                  <ownedParameter xmi:id="ba6f751f-7dae-4401-ba92-6b88845643d7" name="request" visibility="public" type="135d85ed-9b27-43be-b8c3-2c70f7bf3168"/>
+                  <ownedParameter xmi:id="983610e1-6419-4b97-abce-7605f7af28fd" name="pContext" visibility="public" type="6cc8e7bb-16e0-4cc2-ba30-dbdce9c58c68"/>
+                  <ownedParameter xmi:id="30650575-17dc-4a99-9ffb-a18b85b695cd" name="" visibility="public" type="d62788f7-eb7f-4842-92d7-098a6476cdb6" isOrdered="true" isUnique="false" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="1f33fac5-10a0-48c5-b75a-e10e6e4de58e" name="executeIntervalSearch" visibility="public">
+                  <ownedParameter xmi:id="3c78f935-4f1e-4bf1-9ad2-ba9003f7c776" name="pRequest" visibility="public" type="1efaf5ee-cd51-482b-a723-8fb963c0c538"/>
+                  <ownedParameter xmi:id="acc9d878-288a-44b5-b005-bf38a3a548f1" name="pContext" visibility="public" type="6cc8e7bb-16e0-4cc2-ba30-dbdce9c58c68"/>
+                  <ownedParameter xmi:id="c035fceb-0dfa-41c1-a84d-b5d7eaed09e5" name="" visibility="public" type="d62788f7-eb7f-4842-92d7-098a6476cdb6" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="6cc8e7bb-16e0-4cc2-ba30-dbdce9c58c68" name="DemoContext">
+                <ownedComment xmi:id="e34695b3-b52d-4abd-8c06-642e913b3843" body="Class represents a generic context for requests. It contains context information that are present for any kind of request..&#xA;&#xA;The class may be extended to add additional information for specific services." annotatedElement="6cc8e7bb-16e0-4cc2-ba30-dbdce9c58c68"/>
+                <ownedAttribute xmi:id="e079ce3e-e5c8-488e-9674-90c3defea87c" name="traceParent" visibility="private">
+                  <ownedComment xmi:id="f2c77bc0-3736-44ee-9702-09c5962787e5" body="The traceparent header describes the position of the incoming request in its trace graph in a portable, fixed-length format. Its design focuses on fast parsing. Every tracing tool MUST properly set traceparent even when it only relies on vendor-specific information in tracestate (see W3C Trace Context, https://www.w3.org/TR/trace-context)." annotatedElement="e079ce3e-e5c8-488e-9674-90c3defea87c"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="5984d6c9-c576-4106-89e7-d3166ddae364" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="7667c4e1-2112-4487-a89c-bd34f1c20dec" name=""/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="33d720c4-4b03-4f27-a024-f163ac5e76ea" name="traceState" visibility="private">
+                  <ownedComment xmi:id="9a59652a-bd79-4780-a976-b35bf599528e" body="The tracestate extends traceparent with vendor-specific data represented by a set of name/value pairs. Storing information in tracestate is optional (see W3C Trace Context)." annotatedElement="33d720c4-4b03-4f27-a024-f163ac5e76ea"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="57bd439e-2a6b-42bc-8019-ad4e96c6e04b" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="0989d784-d876-41ee-b30c-40a2392fcd42" name=""/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="b45b7597-02e9-46cb-abec-67106214a3c7" name="acceptLanguage" visibility="private" isReadOnly="true">
+                  <ownedComment xmi:id="6c92f432-47eb-4e34-b9cf-a148fb5d7dc2" body="Preferred language of the requesting client. Attribute can be filled according to logic of HTTP Header field as defined on Accept-Language." annotatedElement="b45b7597-02e9-46cb-abec-67106214a3c7"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="f3e3c309-1213-4e13-b297-b5705f6876d7" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="09f06e64-369b-4332-9467-31819e4cac49" name=""/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="18497b16-6d8b-484d-8bfe-482339ecd2b7" name="dateShift" visibility="private" isReadOnly="true">
+                  <ownedComment xmi:id="08a2b6ea-0423-47e3-be15-0f96ebb0b24a" body="Header field can be used to modify the date part of the request time stamp. It can either be defined as an absolute date in format &quot;YYYY-MM-DD&quot; or as an relative shift using '+' / '-' in combination with a shift value as absolute number for the amount of days that should be shifted (e.g. &quot;-7&quot; or &quot;+2&quot; days).&#xA;     &#xA;Date shift is only supported on non productive environments." annotatedElement="18497b16-6d8b-484d-8bfe-482339ecd2b7"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="dfb292aa-e943-4fb4-ac0f-5f923b2f72e6" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="a19ec488-0159-4b34-bcf0-ee288ed9434d" name=""/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="6295697e-e2bd-4d02-a5be-b842bbc2f587" name="timeShift" visibility="private" isReadOnly="true">
+                  <ownedComment xmi:id="968aec82-5de3-4734-b1b4-7896632e9d60" body="Header field can be used to modify the time part of the request time stamp. It can either be defined as an absolute time in format HH:mm:ss or as an relative shift using '+' / '-' in combination with a shift value as absolute number for the amount of minutes that should be shifted (e.g. &quot;-31&quot; or &quot;+120&quot; minutes).&#xA;     &#xA;Time shift is only supported on non productive environments." annotatedElement="6295697e-e2bd-4d02-a5be-b842bbc2f587"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="59db1aae-a20e-4cb7-ab48-18e88e4adb34" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="23c7c9aa-07f8-4ec3-9909-3e3a5348f065" name=""/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="4f4be925-3cd0-465b-b42f-d4262bb4c749" name="AbstractTimetableRequest" isAbstract="true">
+                <ownedAttribute xmi:id="144916b7-6e2e-4fe5-80ed-ac52a7cce6ad" name="origin" visibility="private" type="b849eb90-c040-4429-b93b-16f346c950a1" association="cfcee40f-2f76-4438-a8f2-f3a445489502">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="3923be1f-5cee-4e3c-a8a7-7be30034f285" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="9a505c8f-f6ac-4198-8d90-28a6f26318e0" name="" value="1"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="08efa8dd-53de-4926-a205-9ce447cd1848" name="destination" visibility="private" type="b849eb90-c040-4429-b93b-16f346c950a1" association="b0c3c25f-c464-480e-b3f7-56e187b370f9">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="d2d960a1-d272-4a7a-988c-95292243350c" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="51640225-9104-4392-90f5-5e7440c15931" name="" value="1"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="ab7a8f56-8f03-465f-ae06-27752932c2e9" name="vias" visibility="private" type="b849eb90-c040-4429-b93b-16f346c950a1" isOrdered="true" isUnique="false" association="7874f3b4-a153-41e9-89e0-9870cac49bce">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="7b65eb84-6df3-4691-b252-9ce59d5a5ea8" name="" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="72475872-b277-4ff5-a21f-a26ff5c62e59" name=""/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="d906bfb7-d305-4f24-b9bc-1ce799685d88" name="start" visibility="private">
+                  <type xmi:type="uml:Class" href="Java_Extensions.uml#859abc7d-2157-47a3-8901-291aee6b50ef"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="b849eb90-c040-4429-b93b-16f346c950a1" name="UICCode">
+                <ownedAttribute xmi:id="85386e65-6a51-4d08-8105-bbb969e7a9ad" name="code" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="cfcee40f-2f76-4438-a8f2-f3a445489502" name="" memberEnd="574298b3-2946-4e89-b79c-86a607b6839e 144916b7-6e2e-4fe5-80ed-ac52a7cce6ad">
+                <ownedEnd xmi:id="574298b3-2946-4e89-b79c-86a607b6839e" name="" visibility="private" type="4f4be925-3cd0-465b-b42f-d4262bb4c749" association="cfcee40f-2f76-4438-a8f2-f3a445489502"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="b0c3c25f-c464-480e-b3f7-56e187b370f9" name="" memberEnd="06920e07-2cb4-4acf-9c44-988dfb4b133a 08efa8dd-53de-4926-a205-9ce447cd1848">
+                <ownedEnd xmi:id="06920e07-2cb4-4acf-9c44-988dfb4b133a" name="" visibility="private" type="4f4be925-3cd0-465b-b42f-d4262bb4c749" association="b0c3c25f-c464-480e-b3f7-56e187b370f9"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="7874f3b4-a153-41e9-89e0-9870cac49bce" name="" memberEnd="975ffe9f-1a20-4e44-9ac4-7c9cef892666 ab7a8f56-8f03-465f-ae06-27752932c2e9">
+                <ownedEnd xmi:id="975ffe9f-1a20-4e44-9ac4-7c9cef892666" name="" visibility="private" type="4f4be925-3cd0-465b-b42f-d4262bb4c749" association="7874f3b4-a153-41e9-89e0-9870cac49bce"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="135d85ed-9b27-43be-b8c3-2c70f7bf3168" name="TripSearchRequest">
+                <generalization xmi:id="51e6d4b7-8826-4821-9801-c59e72c917d1" isSubstitutable="true" general="4f4be925-3cd0-465b-b42f-d4262bb4c749"/>
+                <ownedAttribute xmi:id="c8dfdec9-206f-4571-a13a-46de533cd2df" name="maxConnections" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="1c71776d-afdd-4b06-920e-82cbb34f5a07" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="e1debb98-fa77-46c4-bd4f-9513072e7232" name=""/>
+                  <defaultValue xmi:type="uml:LiteralInteger" xmi:id="4bc6efcc-198d-4d63-943c-95607595ea6e" name="" value="5"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="1efaf5ee-cd51-482b-a723-8fb963c0c538" name="IntervalSearchRequest">
+                <generalization xmi:id="8270ea17-5dff-4a18-b39b-3fd8ee433c8c" isSubstitutable="true" general="4f4be925-3cd0-465b-b42f-d4262bb4c749"/>
+                <ownedAttribute xmi:id="03b23489-ff3f-4605-8bc8-2e8c0c375a8d" name="interval" visibility="private">
+                  <ownedComment xmi:id="84b51a6e-4975-478a-a5b9-8367c1c82ce0" body="Interval search length in minutes." annotatedElement="03b23489-ff3f-4605-8bc8-2e8c0c375a8d"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="fe9edb75-0823-4100-a336-162cf7556b81" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="7236b9d2-aa92-4c74-9e23-408f9e168d41" name=""/>
+                  <defaultValue xmi:type="uml:LiteralInteger" xmi:id="51e9999e-0c50-47a9-b14e-c563ea61b9c1" name="" value="1440"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="654ab2c5-7aa7-46d5-acc6-21e0f35d8122" name="Trip">
+                <ownedAttribute xmi:id="690904b6-26b3-41f7-ad40-b5755eba5488" name="legs" visibility="private" type="02703e44-7cf4-4603-a557-85ad9071d4b7" isOrdered="true" isUnique="false" association="280a09d3-0f4e-4039-9f1d-dd2cc75d8080">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ac092cb3-d791-421b-b3fc-7f5ea44f082d" name="" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="9d5e76a3-19c5-4633-9603-00670143d8ed" name="" value="1"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="02703e44-7cf4-4603-a557-85ad9071d4b7" name="Leg">
+                <ownedAttribute xmi:id="8233b007-fb7f-4e67-8cc7-b58067307c13" name="departure" visibility="private">
+                  <type xmi:type="uml:Class" href="Java_Extensions.uml#859abc7d-2157-47a3-8901-291aee6b50ef"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="0a273d25-768d-474a-b1db-b19b04e940bd" name="arrival" visibility="private">
+                  <type xmi:type="uml:Class" href="Java_Extensions.uml#859abc7d-2157-47a3-8901-291aee6b50ef"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="e87a2ac8-ccc5-4c19-9a9b-cb011d17257c" name="segments" visibility="private" type="7714d4f7-42b9-4b67-8ccb-fa6164c1907d" isOrdered="true" isUnique="false" association="89d4622f-a45f-47b2-a863-d4a9d479ba05">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="3f2522d1-8ac2-44ea-88e1-ea9d13c39ceb" name="" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ce1c2668-200f-4cb2-89bc-d4decafc82e0" name="" value="1"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="280a09d3-0f4e-4039-9f1d-dd2cc75d8080" name="" memberEnd="13dc9cf4-3738-410e-9f53-3b30c293e5d2 690904b6-26b3-41f7-ad40-b5755eba5488">
+                <ownedEnd xmi:id="13dc9cf4-3738-410e-9f53-3b30c293e5d2" name="" visibility="private" type="654ab2c5-7aa7-46d5-acc6-21e0f35d8122" association="280a09d3-0f4e-4039-9f1d-dd2cc75d8080"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="7714d4f7-42b9-4b67-8ccb-fa6164c1907d" name="LegSegment">
+                <ownedAttribute xmi:id="5b5f6d57-99c3-4c63-abc0-49e372ab3b6c" name="from" visibility="private" type="b849eb90-c040-4429-b93b-16f346c950a1" association="6df55007-759c-40c4-b9ea-445876aab7e0">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="6ef39aba-67c8-4d57-8811-112c450516d0" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="624fa254-9cb2-4e92-a6f2-4ced2dfc277c" name="" value="1"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="91164436-a092-4f77-bd8c-ae5ba454eacb" name="to" visibility="private" type="b849eb90-c040-4429-b93b-16f346c950a1" association="ffaba07e-b9b5-44d8-8486-5179830e6ed4">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="410296c1-4a4d-4a49-87ed-4e38844b07f0" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="9fe9cfbe-23c6-41f0-bc08-852618e62ea4" name="" value="1"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="957ddd02-d077-42ef-ae84-c2153988cac3" name="intermediateStops" visibility="private" type="b849eb90-c040-4429-b93b-16f346c950a1" isOrdered="true" isUnique="false" association="5ea841b0-f03b-4d0c-a2fa-a277bbd58136">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="2464fdc8-dfd6-4b41-aeb4-638700cdffb8" name="" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="787dea09-e233-468b-9046-5f95ec1b994b" name=""/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="990fd9e0-23c4-4cfe-97fd-380e54a6d38a" name="carrier" visibility="private" type="bb6fd757-1377-462a-952a-395dfdbe1107" association="171bc818-d340-4089-9341-bd99b2660260">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="30134da4-a6b2-4d1f-b41d-db6f858a7bcd" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="d1b4c0b3-c945-44b8-b182-8f6774af4966" name="" value="1"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="7828a2de-9fce-42cb-a365-04520fae5735" name="vehicleNumber" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="2e562eca-080a-42e7-bf94-febbc7c5d622" name="transportMeans" visibility="private" type="7a976040-2fd4-4277-a271-5cf28409179b" association="b1678d57-3d8a-4c75-b369-414f775fb867">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="a2c8c232-8a79-4007-a1a1-4ad7b083ff1a" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="362a1f77-6d02-4dcc-b550-3c08fbd995cc" name="" value="1"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="9a5968fb-e14a-4ece-a8ec-d7699cd0fb3c" name="vehicleType" visibility="private" type="275f355b-171b-4efc-8cc8-5f662dbdd305" association="62d303f8-8f2d-4765-925e-9f462abe9f6f">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="2af113b8-ee6a-4d7e-9e68-b73bde1531f0" name="" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="00181776-9467-4a89-8397-6db5d75a29c4" name="" value="1"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="89d4622f-a45f-47b2-a863-d4a9d479ba05" name="" memberEnd="ff130a8d-7ee5-48d4-a038-dd6b9668493c e87a2ac8-ccc5-4c19-9a9b-cb011d17257c">
+                <ownedEnd xmi:id="ff130a8d-7ee5-48d4-a038-dd6b9668493c" name="" visibility="private" type="02703e44-7cf4-4603-a557-85ad9071d4b7" association="89d4622f-a45f-47b2-a863-d4a9d479ba05"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="6df55007-759c-40c4-b9ea-445876aab7e0" name="" memberEnd="ab72299c-692a-4059-b3dd-a6580b6c8555 5b5f6d57-99c3-4c63-abc0-49e372ab3b6c">
+                <ownedEnd xmi:id="ab72299c-692a-4059-b3dd-a6580b6c8555" name="" visibility="private" type="7714d4f7-42b9-4b67-8ccb-fa6164c1907d" association="6df55007-759c-40c4-b9ea-445876aab7e0"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="ffaba07e-b9b5-44d8-8486-5179830e6ed4" name="" memberEnd="428739a6-35b7-4f99-929f-963ac2044808 91164436-a092-4f77-bd8c-ae5ba454eacb">
+                <ownedEnd xmi:id="428739a6-35b7-4f99-929f-963ac2044808" name="" visibility="private" type="7714d4f7-42b9-4b67-8ccb-fa6164c1907d" association="ffaba07e-b9b5-44d8-8486-5179830e6ed4"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="5ea841b0-f03b-4d0c-a2fa-a277bbd58136" name="" memberEnd="de8283de-ae26-4404-922b-9e89c3040b36 957ddd02-d077-42ef-ae84-c2153988cac3">
+                <ownedEnd xmi:id="de8283de-ae26-4404-922b-9e89c3040b36" name="" visibility="private" type="7714d4f7-42b9-4b67-8ccb-fa6164c1907d" association="5ea841b0-f03b-4d0c-a2fa-a277bbd58136"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="bb6fd757-1377-462a-952a-395dfdbe1107" name="CarrierCode">
+                <ownedAttribute xmi:id="92fe05c1-7503-416f-8a01-8a551423b829" name="code" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="171bc818-d340-4089-9341-bd99b2660260" name="" memberEnd="0c4bd1f4-47fa-4205-86c4-499e4ae6f064 990fd9e0-23c4-4cfe-97fd-380e54a6d38a">
+                <ownedEnd xmi:id="0c4bd1f4-47fa-4205-86c4-499e4ae6f064" name="" visibility="private" type="7714d4f7-42b9-4b67-8ccb-fa6164c1907d" association="171bc818-d340-4089-9341-bd99b2660260"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="7a976040-2fd4-4277-a271-5cf28409179b" name="TransportMeans">
+                <ownedLiteral xmi:id="2271325f-ecd4-43ad-b42e-5286ff6702a8" name="TRAIN" classifier="7a976040-2fd4-4277-a271-5cf28409179b"/>
+                <ownedLiteral xmi:id="4f308cb1-07bf-41a8-803c-e47b99ec52e8" name="BUS" classifier="7a976040-2fd4-4277-a271-5cf28409179b"/>
+                <ownedLiteral xmi:id="51277e2f-b415-4111-b0b1-80d6d5f7a968" name="SHIP" classifier="7a976040-2fd4-4277-a271-5cf28409179b"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="275f355b-171b-4efc-8cc8-5f662dbdd305" name="VehicleType">
+                <ownedLiteral xmi:id="83114636-a935-460c-be28-ee8dd14611c4" name="TGV" classifier="275f355b-171b-4efc-8cc8-5f662dbdd305"/>
+                <ownedLiteral xmi:id="d8498de6-84d2-4f07-b300-27f451e91c10" name="ICE" classifier="275f355b-171b-4efc-8cc8-5f662dbdd305"/>
+                <ownedLiteral xmi:id="4e2fb469-b022-4b1e-930a-aa86bc4e11bb" name="IC" classifier="275f355b-171b-4efc-8cc8-5f662dbdd305"/>
+                <ownedLiteral xmi:id="9a084daf-c520-4eff-b25f-645861cadf0f" name="RE" classifier="275f355b-171b-4efc-8cc8-5f662dbdd305"/>
+                <ownedLiteral xmi:id="b0347c8e-fb4b-40fc-a3ff-5e02d06efc15" name="S" classifier="275f355b-171b-4efc-8cc8-5f662dbdd305"/>
+                <ownedLiteral xmi:id="681d3004-6d35-40ce-80fc-6f1a2bc474a3" name="PEX" classifier="275f355b-171b-4efc-8cc8-5f662dbdd305"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="b1678d57-3d8a-4c75-b369-414f775fb867" name="" memberEnd="c882525e-0924-417e-81ee-099a40f7a2ac 2e562eca-080a-42e7-bf94-febbc7c5d622">
+                <ownedEnd xmi:id="c882525e-0924-417e-81ee-099a40f7a2ac" name="" visibility="private" type="7714d4f7-42b9-4b67-8ccb-fa6164c1907d" association="b1678d57-3d8a-4c75-b369-414f775fb867"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="62d303f8-8f2d-4765-925e-9f462abe9f6f" name="" memberEnd="b4a8f161-63ec-4af4-8a80-44aed5ed6a70 9a5968fb-e14a-4ece-a8ec-d7699cd0fb3c">
+                <ownedEnd xmi:id="b4a8f161-63ec-4af4-8a80-44aed5ed6a70" name="" visibility="private" type="7714d4f7-42b9-4b67-8ccb-fa6164c1907d" association="62d303f8-8f2d-4765-925e-9f462abe9f6f"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="79322946-0cd1-4bb4-9475-cb48863fda51" name="Message">
+                <ownedAttribute xmi:id="5b251252-c295-48c2-a72f-55d9e03ba196" name="id" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="2d70068e-d8a1-453a-a640-ba42d9094202" name="text" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="d62788f7-eb7f-4842-92d7-098a6476cdb6" name="TimetableResponse">
+                <ownedAttribute xmi:id="f704ab14-5b77-4b04-820d-ec70b0882c97" name="messages" visibility="private" type="79322946-0cd1-4bb4-9475-cb48863fda51" isOrdered="true" isUnique="false" association="b9de6426-afe8-41d9-b2bf-29ec2958ad0d">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="bc2787a3-ee66-4a4f-8df2-1f0ca90dfa8b" name="" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="3d87375f-7714-48d3-b7ab-e4f2ca391d3d" name=""/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="ab243fe3-d883-4671-9518-261546b42060" name="trips" visibility="private" type="654ab2c5-7aa7-46d5-acc6-21e0f35d8122" isOrdered="true" isUnique="false" association="59e53326-75ea-4bc4-9378-6b7c68eaf83c">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="b5842af6-1b16-4c87-a76d-cb67069f52e1" name="" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="35e5ff7b-1590-4e99-a0ab-34a1cbcba05e" name=""/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="b9de6426-afe8-41d9-b2bf-29ec2958ad0d" name="" memberEnd="b181adea-f07e-4f2f-a254-5f84974e1136 f704ab14-5b77-4b04-820d-ec70b0882c97">
+                <ownedEnd xmi:id="b181adea-f07e-4f2f-a254-5f84974e1136" name="" visibility="private" type="d62788f7-eb7f-4842-92d7-098a6476cdb6" association="b9de6426-afe8-41d9-b2bf-29ec2958ad0d"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="59e53326-75ea-4bc4-9378-6b7c68eaf83c" name="" memberEnd="6b619255-52e5-42b2-ab7a-670398e0a626 ab243fe3-d883-4671-9518-261546b42060">
+                <ownedEnd xmi:id="6b619255-52e5-42b2-ab7a-670398e0a626" name="" visibility="private" type="d62788f7-eb7f-4842-92d7-098a6476cdb6" association="59e53326-75ea-4bc4-9378-6b7c68eaf83c"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="4245ec45-6e7f-497b-bb9b-ae2e4f3347ef" name="serializers">
+                <packagedElement xmi:type="uml:Component" xmi:id="4caee8ac-2a09-411c-9454-0261e63d5116" name="TimetableDemoModuleFactory" clientDependency="400531f4-09e2-4658-8f13-ac295d188ec6">
+                  <packagedElement xmi:type="uml:Dependency" xmi:id="400531f4-09e2-4658-8f13-ac295d188ec6" name="" supplier="d362e111-0533-48b9-bc8c-7d62f4c8e598" client="4caee8ac-2a09-411c-9454-0261e63d5116"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Component" xmi:id="cf877879-5f17-45a0-815f-9a63eb154706" name="JEAF Timetable Demo API" clientDependency="539dfcd8-44ff-4485-bf98-a55c8889af8d 872d9794-75a3-413c-9003-5ad3c52c5e1d">
+                <packagedElement xmi:type="uml:Dependency" xmi:id="539dfcd8-44ff-4485-bf98-a55c8889af8d" name="" supplier="d362e111-0533-48b9-bc8c-7d62f4c8e598" client="cf877879-5f17-45a0-815f-9a63eb154706"/>
+                <packagedElement xmi:type="uml:Dependency" xmi:id="872d9794-75a3-413c-9003-5ad3c52c5e1d" name="" supplier="df8456de-86f5-4224-8ee1-fcf3b95695c1" client="cf877879-5f17-45a0-815f-9a63eb154706"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="2423ef81-73ae-48e3-b748-afe8eede918c" name="ErrorResponse" clientDependency="4e452c63-8cd3-4106-8d2b-e694865e774a">
+                <ownedComment xmi:id="fdd95ef8-9f39-454c-9dbf-e09bf9ced855" body="Generic error response that is used to indicate technical problems. Returned data structure is compliant with Problem JSON." annotatedElement="2423ef81-73ae-48e3-b748-afe8eede918c"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="05fa8d60-7cf1-420d-8850-d03967c50b03" name="Problem">
+                <ownedComment xmi:id="fcd8898e-4f95-4dec-9439-1549c2f1517c" body="Data structure represents a technical problem that occurred during a REST call (aka as Problem JSON). It is compatible with problem structure as it is defined in RFC7807 (https://datatracker.ietf.org/doc/html/rfc7807).&#xA;&#xA;Here, problems are only used to indicate technical problems. Business problems need to provide way more context and thus will be part of response data structure.&#xA;" annotatedElement="05fa8d60-7cf1-420d-8850-d03967c50b03"/>
+                <ownedAttribute xmi:id="e9f98f61-fdf3-45ae-b450-e44f4496ecac" name="title" visibility="private" isReadOnly="true">
+                  <ownedComment xmi:id="c911ebde-47c1-46a9-bf7a-b9705b4357e0" body="A short, human-readable summary of the problem type. It SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.&#xA;Consumers MUST use the &quot;type&quot; string as the primary identifier for the problem type; the &quot;title&quot; string is advisory and included only for users who are not aware of the semantics of the URI and do not have the ability to discover them." annotatedElement="e9f98f61-fdf3-45ae-b450-e44f4496ecac"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="51c2bdc7-3f75-4351-882d-bdb547864ac0" name="status" isReadOnly="true">
+                  <ownedComment xmi:id="191667c5-6ece-4b8a-80cc-dfded3e1cecf" body="The HTTP status code ([RFC7231], Section 6) generated by the origin server for this occurrence of the problem." annotatedElement="51c2bdc7-3f75-4351-882d-bdb547864ac0"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="686731f0-5ed0-449e-a093-04791cac388c" name="type" visibility="private" isReadOnly="true">
+                  <ownedComment xmi:id="44cbb83c-d1dd-4567-82e8-0e013cc3e36a" body="A URI reference [RFC3986] that identifies the problem type. When this member is not present, its value is assumed to be &quot;about:blank&quot;." annotatedElement="686731f0-5ed0-449e-a093-04791cac388c"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="606dfbff-a055-4002-a92a-748aae0d8028" name="" value="&quot;about:blank&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="2954a42c-7c41-4163-afe9-59d4ca3cdd00" name="detail" visibility="private" isReadOnly="true">
+                  <ownedComment xmi:id="c260d3ba-1c23-47bf-a1ce-418be6f55fb8" body="A human-readable explanation specific to this occurrence of the problem." annotatedElement="2954a42c-7c41-4163-afe9-59d4ca3cdd00"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="e25bf8db-21b8-4e4a-96e4-a5398f40d195" name="instance" visibility="private" isReadOnly="true">
+                  <ownedComment xmi:id="68e006d8-afb3-4485-b39d-1d02c572b39a" body="A URI reference that identifies the specific occurrence of the problem.  It may or may not yield further information if dereferenced." annotatedElement="e25bf8db-21b8-4e4a-96e4-a5398f40d195"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Dependency" xmi:id="4e452c63-8cd3-4106-8d2b-e694865e774a" name="" supplier="05fa8d60-7cf1-420d-8850-d03967c50b03" client="2423ef81-73ae-48e3-b748-afe8eede918c"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="93a27562-4954-4d8c-9cb8-2e8bb93af6a1" name="" client="c26db9ff-c3d3-41ca-857e-c290e8beed0f">
+      <supplier xmi:type="uml:Profile" href="JMM.profile.uml#2c6d5f52-15a0-4a9d-a003-3a396d99e883"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="b57c511e-b5c1-4f57-a3e6-7e2940544c99" name="" client="c26db9ff-c3d3-41ca-857e-c290e8beed0f">
+      <supplier xmi:type="uml:Package" href="Java_Extensions.uml#5dcd23a0-44e4-4016-b41f-de12d7fcf4d6"/>
+    </packagedElement>
+    <profileApplication xmi:id="b493721c-a112-47a9-8ee8-085b2ac476cdprofileApplicationModel">
+      <eAnnotations xmi:id="_wKtzhg2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Profile_for_Java.statements.profile.uml#_wKfKBQ2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Profile_for_Java.statements.profile.uml#b493721c-a112-47a9-8ee8-085b2ac476cd"/>
+    </profileApplication>
+    <profileApplication xmi:id="7fe009a7-9bc6-4e23-8331-8f0fc935891bprofileApplicationModel">
+      <eAnnotations xmi:id="_wKtziA2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_wKei8g2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#7fe009a7-9bc6-4e23-8331-8f0fc935891b"/>
+    </profileApplication>
+    <profileApplication xmi:id="6f45c64e-0429-4093-ad7f-1662d00603f2profileApplicationModel">
+      <eAnnotations xmi:id="_wKtzig2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.Find_By_Text.profile.uml#_wKfKiQ2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.Find_By_Text.profile.uml#6f45c64e-0429-4093-ad7f-1662d00603f2"/>
+    </profileApplication>
+    <profileApplication xmi:id="7279c57e-1301-4387-9c5e-fdaae72b924fprofileApplicationModel">
+      <eAnnotations xmi:id="_wKtzjA2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_wKfKlw2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#7279c57e-1301-4387-9c5e-fdaae72b924f"/>
+    </profileApplication>
+    <profileApplication xmi:id="528bcb7f-ec4a-4d18-bfc7-f24423af6b37profileApplicationModel">
+      <eAnnotations xmi:id="_wKtzjg2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Profile_for_Java.profile.uml#_wKfypg2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Profile_for_Java.profile.uml#528bcb7f-ec4a-4d18-bfc7-f24423af6b37"/>
+    </profileApplication>
+    <profileApplication xmi:id="489eaa41-4c06-4a1c-ba02-3cdfdd96adfcprofileApplicationModel">
+      <eAnnotations xmi:id="_wKuakQ2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.Dependency_Matrix_Profile.profile.uml#_wKssrw2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.Dependency_Matrix_Profile.profile.uml#489eaa41-4c06-4a1c-ba02-3cdfdd96adfc"/>
+    </profileApplication>
+    <profileApplication xmi:id="7ebba35e-2cce-45bd-91d3-c8de398adfc8profileApplicationModel">
+      <eAnnotations xmi:id="_wKuakw2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Profile_for_Java.deployment.profile.uml#_wKssag2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Profile_for_Java.deployment.profile.uml#7ebba35e-2cce-45bd-91d3-c8de398adfc8"/>
+    </profileApplication>
+    <profileApplication xmi:id="20c28b15-130e-400e-bc87-47bedfa68499profileApplicationModel">
+      <eAnnotations xmi:id="_wKualQ2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.Traceability_customization.profile.uml#_wKfzwA2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.Traceability_customization.profile.uml#20c28b15-130e-400e-bc87-47bedfa68499"/>
+    </profileApplication>
+    <profileApplication xmi:id="5a89f7d3-1bb0-47e4-bd33-99b78ab8a837profileApplicationModel">
+      <eAnnotations xmi:id="_wKualw2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.StandardProfile.profile.uml#_wKfzug2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.StandardProfile.profile.uml#5a89f7d3-1bb0-47e4-bd33-99b78ab8a837"/>
+    </profileApplication>
+    <profileApplication xmi:id="21867390-8a26-4826-85d2-73a6bbd248c0profileApplicationModel">
+      <eAnnotations xmi:id="_wKuamQ2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.Validation_Profile.profile.uml#_wKf0mg2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.Validation_Profile.profile.uml#21867390-8a26-4826-85d2-73a6bbd248c0"/>
+    </profileApplication>
+    <profileApplication xmi:id="2c6d5f52-15a0-4a9d-a003-3a396d99e883profileApplicationModel">
+      <eAnnotations xmi:id="_wKvBoQ2BEfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="JMM.profile.uml#_wKtMwg2BEfGMJ_pXoEL-UQ"/>
+      </eAnnotations>
+      <appliedProfile href="JMM.profile.uml#2c6d5f52-15a0-4a9d-a003-3a396d99e883"/>
+    </profileApplication>
+  </uml:Model>
+  <MagicDrawProfile:mount xmi:id="_wLnyrg2BEfGMJ_pXoEL-UQ" base_Dependency="93a27562-4954-4d8c-9cb8-2e8bb93af6a1"/>
+  <MagicDrawProfile:mount xmi:id="_wLnyrw2BEfGMJ_pXoEL-UQ" base_Dependency="b57c511e-b5c1-4f57-a3e6-7e2940544c99"/>
+  <JMM:JEAFService xmi:id="_wMjmkw2BEfGMJ_pXoEL-UQ" base_Interface="df8456de-86f5-4224-8ee1-fcf3b95695c1"/>
+  <JMM:JEAFEnumeration xmi:id="_wMjmlA2BEfGMJ_pXoEL-UQ" base_Enumeration="275f355b-171b-4efc-8cc8-5f662dbdd305" extensibleEnum="true"/>
+  <JMM:JEAFEnumeration xmi:id="_wMjmlQ2BEfGMJ_pXoEL-UQ" base_Enumeration="7a976040-2fd4-4277-a271-5cf28409179b"/>
+  <JMM:POJO xmi:id="_wMjmlg2BEfGMJ_pXoEL-UQ" base_Class="7714d4f7-42b9-4b67-8ccb-fa6164c1907d"/>
+  <JMM:POJO xmi:id="_wMjmlw2BEfGMJ_pXoEL-UQ" base_Class="654ab2c5-7aa7-46d5-acc6-21e0f35d8122"/>
+  <JMM:POJO xmi:id="_wMjmmA2BEfGMJ_pXoEL-UQ" base_Class="79322946-0cd1-4bb4-9475-cb48863fda51"/>
+  <JMM:POJO xmi:id="_wMjmmQ2BEfGMJ_pXoEL-UQ" base_Class="05fa8d60-7cf1-420d-8850-d03967c50b03"/>
+  <JMM:POJO xmi:id="_wMjmmg2BEfGMJ_pXoEL-UQ" base_Class="d62788f7-eb7f-4842-92d7-098a6476cdb6"/>
+  <JMM:POJO xmi:id="_wMjmmw2BEfGMJ_pXoEL-UQ" base_Class="bb6fd757-1377-462a-952a-395dfdbe1107"/>
+  <JMM:POJO xmi:id="_wMjmnA2BEfGMJ_pXoEL-UQ" base_Class="02703e44-7cf4-4603-a557-85ad9071d4b7"/>
+  <JMM:POJO xmi:id="_wMjmnQ2BEfGMJ_pXoEL-UQ" base_Class="b849eb90-c040-4429-b93b-16f346c950a1"/>
+  <JMM:POJO xmi:id="_wMjmng2BEfGMJ_pXoEL-UQ" base_Class="1efaf5ee-cd51-482b-a723-8fb963c0c538"/>
+  <JMM:POJO xmi:id="_wMjmnw2BEfGMJ_pXoEL-UQ" base_Class="135d85ed-9b27-43be-b8c3-2c70f7bf3168"/>
+  <JMM:POJO xmi:id="_wMjmoA2BEfGMJ_pXoEL-UQ" base_Class="4f4be925-3cd0-465b-b42f-d4262bb4c749"/>
+  <JMM:POJO xmi:id="_wMjmoQ2BEfGMJ_pXoEL-UQ" base_Class="6cc8e7bb-16e0-4cc2-ba30-dbdce9c58c68"/>
+  <JMM:RESTResource xmi:id="_wMkNoA2BEfGMJ_pXoEL-UQ" base_Interface="df8456de-86f5-4224-8ee1-fcf3b95695c1" path="/timetable">
+    <produces>APPLICATION_JSON</produces>
+    <consumes>APPLICATION_JSON</consumes>
+  </JMM:RESTResource>
+  <JMM:RESTOperation xmi:id="_wMkNoQ2BEfGMJ_pXoEL-UQ" path="trips" base_Operation="6fb3bb52-72f9-491c-8f54-eb283a8d9c23">
+    <httpMethods>GET</httpMethods>
+  </JMM:RESTOperation>
+  <JMM:RESTOperation xmi:id="_wMkNog2BEfGMJ_pXoEL-UQ" path="interval" base_Operation="1f33fac5-10a0-48c5-b75a-e10e6e4de58e">
+    <httpMethods>GET</httpMethods>
+  </JMM:RESTOperation>
+  <JMM:OpenAPI3Specification xmi:id="_wMk0sQ2BEfGMJ_pXoEL-UQ" resourceName="jeaf-timetable-demo-api.yaml" base_Component="cf877879-5f17-45a0-815f-9a63eb154706" contactName="JEAF Development Team" contactEmail="jeaf@anaptecs.de"/>
+  <JMM:OpenAPIType xmi:id="_wMk0sg2BEfGMJ_pXoEL-UQ" base_Class="7714d4f7-42b9-4b67-8ccb-fa6164c1907d"/>
+  <JMM:OpenAPIType xmi:id="_wMk0sw2BEfGMJ_pXoEL-UQ" base_Class="654ab2c5-7aa7-46d5-acc6-21e0f35d8122"/>
+  <JMM:OpenAPIType xmi:id="_wMk0tA2BEfGMJ_pXoEL-UQ" base_Class="79322946-0cd1-4bb4-9475-cb48863fda51"/>
+  <JMM:OpenAPIType xmi:id="_wMk0tQ2BEfGMJ_pXoEL-UQ" base_Class="05fa8d60-7cf1-420d-8850-d03967c50b03"/>
+  <JMM:OpenAPIType xmi:id="_wMk0tg2BEfGMJ_pXoEL-UQ" base_Class="d62788f7-eb7f-4842-92d7-098a6476cdb6"/>
+  <JMM:OpenAPIType xmi:id="_wMk0tw2BEfGMJ_pXoEL-UQ" base_Class="02703e44-7cf4-4603-a557-85ad9071d4b7"/>
+  <JMM:OpenAPIEnumeration xmi:id="_wMk0uA2BEfGMJ_pXoEL-UQ" base_Enumeration="275f355b-171b-4efc-8cc8-5f662dbdd305" extensibleEnum="true"/>
+  <JMM:OpenAPIEnumeration xmi:id="_wMk0uQ2BEfGMJ_pXoEL-UQ" base_Enumeration="7a976040-2fd4-4277-a271-5cf28409179b"/>
+  <JMM:HeaderParam xmi:id="_wMk0ug2BEfGMJ_pXoEL-UQ" value="Time-Shift" base_Property="6295697e-e2bd-4d02-a5be-b842bbc2f587"/>
+  <JMM:HeaderParam xmi:id="_wMk0uw2BEfGMJ_pXoEL-UQ" value="Date-Shift" base_Property="18497b16-6d8b-484d-8bfe-482339ecd2b7"/>
+  <JMM:HeaderParam xmi:id="_wMk0vA2BEfGMJ_pXoEL-UQ" value="Accept-Language" base_Property="b45b7597-02e9-46cb-abec-67106214a3c7"/>
+  <JMM:HeaderParam xmi:id="_wMk0vQ2BEfGMJ_pXoEL-UQ" value="traceparent" base_Property="e079ce3e-e5c8-488e-9674-90c3defea87c" technicalHeader="true"/>
+  <JMM:HeaderParam xmi:id="_wMk0vg2BEfGMJ_pXoEL-UQ" value="tracestate" base_Property="33d720c4-4b03-4f27-a024-f163ac5e76ea" technicalHeader="true"/>
+  <JMM:QueryParam xmi:id="_wMk0vw2BEfGMJ_pXoEL-UQ" base_Property="d906bfb7-d305-4f24-b9bc-1ce799685d88"/>
+  <JMM:QueryParam xmi:id="_wMk0wA2BEfGMJ_pXoEL-UQ" base_Property="03b23489-ff3f-4605-8bc8-2e8c0c375a8d"/>
+  <JMM:QueryParam xmi:id="_wMk0wQ2BEfGMJ_pXoEL-UQ" base_Property="08efa8dd-53de-4926-a205-9ce447cd1848"/>
+  <JMM:QueryParam xmi:id="_wMk0wg2BEfGMJ_pXoEL-UQ" base_Property="c8dfdec9-206f-4571-a13a-46de533cd2df"/>
+  <JMM:QueryParam xmi:id="_wMk0ww2BEfGMJ_pXoEL-UQ" base_Property="144916b7-6e2e-4fe5-80ed-ac52a7cce6ad"/>
+  <JMM:QueryParam xmi:id="_wMk0xA2BEfGMJ_pXoEL-UQ" base_Property="ab7a8f56-8f03-465f-ae06-27752932c2e9"/>
+  <JMM:BeanParam xmi:id="_wMk0xQ2BEfGMJ_pXoEL-UQ" base_Class="1efaf5ee-cd51-482b-a723-8fb963c0c538"/>
+  <JMM:BeanParam xmi:id="_wMk0xg2BEfGMJ_pXoEL-UQ" base_Class="135d85ed-9b27-43be-b8c3-2c70f7bf3168"/>
+  <JMM:BeanParam xmi:id="_wMk0xw2BEfGMJ_pXoEL-UQ" base_Class="4f4be925-3cd0-465b-b42f-d4262bb4c749"/>
+  <JMM:BeanParam xmi:id="_wMk0yA2BEfGMJ_pXoEL-UQ" base_Class="6cc8e7bb-16e0-4cc2-ba30-dbdce9c58c68"/>
+  <JMM:OpenAPIResponse xmi:id="_wMk0yQ2BEfGMJ_pXoEL-UQ" base_Class="2423ef81-73ae-48e3-b748-afe8eede918c" unexpectedErrorResponse="true" globalDefaultErrorResponse="true">
+    <statusCodes>400_BAD_REQUEST</statusCodes>
+    <statusCodes>401_UNAUTHORIZED</statusCodes>
+    <statusCodes>403_FORBIDDEN</statusCodes>
+    <statusCodes>500_INTERNAL_SERVER_ERROR</statusCodes>
+  </JMM:OpenAPIResponse>
+  <JMM:OpenAPIDataType xmi:id="_wMk0yg2BEfGMJ_pXoEL-UQ" base_Class="bb6fd757-1377-462a-952a-395dfdbe1107"/>
+  <JMM:OpenAPIDataType xmi:id="_wMk0yw2BEfGMJ_pXoEL-UQ" base_Class="b849eb90-c040-4429-b93b-16f346c950a1"/>
+  <JMM:ModuleFactory xmi:id="_wMk0zA2BEfGMJ_pXoEL-UQ" base_Component="4caee8ac-2a09-411c-9454-0261e63d5116"/>
+</xmi:XMI>

@@ -10,7 +10,7 @@
 
 	<name>JEAF Timetable Demo API OpenAPI</name>
 	<artifactId>jeaf-timetable-demo-api-open-api</artifactId>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
 	<properties>
 		<generateOpenAPISpec>true</generateOpenAPISpec>

@@ -24,6 +24,22 @@
 		<!-- UML package which will be the one that is considered during code generation --> 
 		<umlPackage>com.anaptecs.jeaf.timetable.api</umlPackage>
 
+		<!-- PROTECTED REGION ID(xmi-properties:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
+		<!-- 
+			Directory on local file system from where XMI files should be read. 
+			Property only needs to be set in case that you want read XMI files from local file system
+		-->
+		<my.xmiDirectory>./jeaf-timetable-demo-api-uml/xmi</my.xmiDirectory>
+		
+		<!--
+			Properties are use to specify the Maven artifact from which the XMI files should be read.
+			Properties only need to be set in case that you want read XMI files from a Maven artifact.
+		-->
+		<my.modelArtifactGroupID>TODO</my.modelArtifactGroupID>
+		<my.modelArtifactArtifactID>TODO</my.modelArtifactArtifactID>
+		<my.modelArtifactXMIPath>xmi</my.modelArtifactXMIPath>
+		<!-- PROTECTED REGION END -->
+
 	</properties>
 
 
@@ -31,19 +47,17 @@
 		<profile>
 			<id>RunCodeGenerationFromXMIFile</id>
 			<properties>
-				<!-- PROTECTED REGION ID(local-xmi-directory:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
 				<!-- Read UML model (XMI files) directly from local file system -->
-				<xmiDirectory>./jeaf-timetable-demo-api-uml/xmi</xmiDirectory>
-				<!-- PROTECTED REGION END -->
+				<xmiDirectory>${my.xmiDirectory}</xmiDirectory>
 			</properties>
 		</profile>
 		<profile>
 			<id>RunCodeGenerationFromModelArtifact</id>
 			<properties>
 				<!-- Read UML model from Maven artifact. -->
-				<modelArtifactGroupID>TODO</modelArtifactGroupID>
-				<modelArtifactArtifactID>TODO</modelArtifactArtifactID>
-				<modelArtifactXMIPath>xmi</modelArtifactXMIPath>
+				<modelArtifactGroupID>${my.modelArtifactGroupID}</modelArtifactGroupID>
+				<modelArtifactArtifactID>${my.modelArtifactArtifactID}</modelArtifactArtifactID>
+				<modelArtifactXMIPath>${my.modelArtifactXMIPath}</modelArtifactXMIPath>
 			</properties>
 		</profile>
 	</profiles>

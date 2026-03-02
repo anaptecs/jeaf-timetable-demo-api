@@ -18,11 +18,11 @@
 
 
 	<properties>
-		<!-- Name of the main file of the UML model -->
-		<umlModelFile>JEAF_Timetable_Demo_API.uml</umlModelFile>
-
 		<!-- UML package which will be the one that is considered during code generation. -->
 		<umlPackage>com.anaptecs.jeaf.timetable.api</umlPackage>
+
+		<!-- Name of the main file of the UML model -->
+		<umlModelFile>JEAF_Timetable_Demo_API.uml</umlModelFile>
 
 		<!-- PROTECTED REGION ID(xmi-properties:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
 		<!-- 

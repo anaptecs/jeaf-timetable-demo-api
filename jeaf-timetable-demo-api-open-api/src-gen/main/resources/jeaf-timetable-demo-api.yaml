@@ -1,0 +1,382 @@
+openapi: 3.0.3
+
+info:
+  title: JEAF Timetable Demo API
+  version: 0.1.0-SNAPSHOT
+  contact:
+    name: JEAF Development Team
+    email: jeaf@anaptecs.de
+
+paths:
+  # TimetableService
+  /timetable/trips:
+    get:
+      description: |
+        
+        <br><br>
+        Authorized Roles: `NOT_AUTHORIZED`
+      operationId: executeTripSearch
+      parameters:
+        - name: origin
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: int32
+            nullable: false
+        - name: destination
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: int32
+            nullable: false
+        - name: vias
+          in: query
+          schema:
+            type: array
+            items:
+              type: integer
+              format: int32
+            nullable: true
+        - name: start
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date-time
+            nullable: false
+        - name: maxConnections
+          in: query
+          schema:
+            type: integer
+            format: int32
+            default: '5'
+        - name: traceparent
+          in: header
+          description: |
+            The traceparent header describes the position of the incoming request in its trace graph in a portable, fixed-length format. Its design focuses on fast parsing. Every tracing tool MUST properly set traceparent even when it only relies on vendor-specific information in tracestate (see W3C Trace Context, https://www.w3.org/TR/trace-context).
+          schema:
+            type: string
+        - name: tracestate
+          in: header
+          description: |
+            The tracestate extends traceparent with vendor-specific data represented by a set of name/value pairs. Storing information in tracestate is optional (see W3C Trace Context).
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: |
+            Preferred language of the requesting client. Attribute can be filled according to logic of HTTP Header field as defined on Accept-Language.
+          schema:
+            type: string
+        - name: Date-Shift
+          in: header
+          description: |
+            Header field can be used to modify the date part of the request time stamp. It can either be defined as an absolute date in format "YYYY-MM-DD" or as an relative shift using '+' / '-' in combination with a shift value as absolute number for the amount of days that should be shifted (e.g. "-7" or "+2" days).<br>
+                 <br>
+            Date shift is only supported on non productive environments.
+          schema:
+            type: string
+        - name: Time-Shift
+          in: header
+          description: |
+            Header field can be used to modify the time part of the request time stamp. It can either be defined as an absolute time in format HH:mm:ss or as an relative shift using '+' / '-' in combination with a shift value as absolute number for the amount of minutes that should be shifted (e.g. "-31" or "+120" minutes).<br>
+                 <br>
+            Time shift is only supported on non productive environments.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: |
+            TODO: Please add comment for response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TimetableResponse'
+    
+        '400':
+          $ref: '#/components/responses/ErrorResponse'
+        '401':
+          $ref: '#/components/responses/ErrorResponse'
+        '403':
+          $ref: '#/components/responses/ErrorResponse'
+        '500':
+          $ref: '#/components/responses/ErrorResponse'
+        'default':
+          $ref: '#/components/responses/ErrorResponse'
+  /timetable/interval:
+    get:
+      description: |
+        
+        <br><br>
+        Authorized Roles: `NOT_AUTHORIZED`
+      operationId: executeIntervalSearch
+      parameters:
+        - name: origin
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: int32
+            nullable: false
+        - name: destination
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: int32
+            nullable: false
+        - name: vias
+          in: query
+          schema:
+            type: array
+            items:
+              type: integer
+              format: int32
+            nullable: true
+        - name: start
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date-time
+            nullable: false
+        - name: interval
+          in: query
+          description: |
+            Interval search length in minutes.
+          schema:
+            type: integer
+            format: int32
+            default: '1440'
+        - name: traceparent
+          in: header
+          description: |
+            The traceparent header describes the position of the incoming request in its trace graph in a portable, fixed-length format. Its design focuses on fast parsing. Every tracing tool MUST properly set traceparent even when it only relies on vendor-specific information in tracestate (see W3C Trace Context, https://www.w3.org/TR/trace-context).
+          schema:
+            type: string
+        - name: tracestate
+          in: header
+          description: |
+            The tracestate extends traceparent with vendor-specific data represented by a set of name/value pairs. Storing information in tracestate is optional (see W3C Trace Context).
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: |
+            Preferred language of the requesting client. Attribute can be filled according to logic of HTTP Header field as defined on Accept-Language.
+          schema:
+            type: string
+        - name: Date-Shift
+          in: header
+          description: |
+            Header field can be used to modify the date part of the request time stamp. It can either be defined as an absolute date in format "YYYY-MM-DD" or as an relative shift using '+' / '-' in combination with a shift value as absolute number for the amount of days that should be shifted (e.g. "-7" or "+2" days).<br>
+                 <br>
+            Date shift is only supported on non productive environments.
+          schema:
+            type: string
+        - name: Time-Shift
+          in: header
+          description: |
+            Header field can be used to modify the time part of the request time stamp. It can either be defined as an absolute time in format HH:mm:ss or as an relative shift using '+' / '-' in combination with a shift value as absolute number for the amount of minutes that should be shifted (e.g. "-31" or "+120" minutes).<br>
+                 <br>
+            Time shift is only supported on non productive environments.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: |
+            TODO: Please add comment for response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TimetableResponse'
+    
+        '400':
+          $ref: '#/components/responses/ErrorResponse'
+        '401':
+          $ref: '#/components/responses/ErrorResponse'
+        '403':
+          $ref: '#/components/responses/ErrorResponse'
+        '500':
+          $ref: '#/components/responses/ErrorResponse'
+        'default':
+          $ref: '#/components/responses/ErrorResponse'
+
+components:
+  responses:
+    # com.anaptecs.jeaf.timetable.api.ErrorResponse
+    ErrorResponse:
+      description: |
+        Generic error response that is used to indicate technical problems. Returned data structure is compliant with Problem JSON.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+
+
+  schemas:
+    # com.anaptecs.jeaf.timetable.api.Leg
+    Leg:
+      type: object
+      additionalProperties: false
+      required:
+        - departure
+        - arrival
+        - segments
+      properties:
+        departure:
+          type: string
+          format: date-time
+          nullable: false
+        arrival:
+          type: string
+          format: date-time
+          nullable: false
+        segments:
+          type: array
+          items:
+            $ref: '#/components/schemas/LegSegment'
+          minItems: 1
+    # com.anaptecs.jeaf.timetable.api.LegSegment
+    LegSegment:
+      type: object
+      additionalProperties: false
+      required:
+        - from
+        - to
+        - carrier
+        - vehicleNumber
+        - transportMeans
+        - vehicleType
+      properties:
+        from:
+          type: integer
+          format: int32
+          nullable: false
+        to:
+          type: integer
+          format: int32
+          nullable: false
+        intermediateStops:
+          type: array
+          items:
+            type: integer
+            format: int32
+          nullable: true
+        carrier:
+          type: string
+          nullable: false
+        vehicleNumber:
+          type: integer
+          format: int32
+          nullable: false
+        transportMeans:
+          $ref: '#/components/schemas/TransportMeans'
+        vehicleType:
+          $ref: '#/components/schemas/VehicleType'
+    # com.anaptecs.jeaf.timetable.api.Message
+    Message:
+      type: object
+      additionalProperties: false
+      required:
+        - id
+        - text
+      properties:
+        id:
+          type: integer
+          format: int32
+          nullable: false
+        text:
+          type: string
+          nullable: false
+    # com.anaptecs.jeaf.timetable.api.Problem
+    Problem:
+      type: object
+      additionalProperties: false
+      description: |
+        Data structure represents a technical problem that occurred during a REST call (aka as Problem JSON). It is compatible with problem structure as it is defined in RFC7807 (https://datatracker.ietf.org/doc/html/rfc7807).<br>
+        <br>
+        Here, problems are only used to indicate technical problems. Business problems need to provide way more context and thus will be part of response data structure.
+      required:
+        - title
+        - status
+        - type
+        - detail
+        - instance
+      properties:
+        title:
+          description: |
+            A short, human-readable summary of the problem type. It SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.<br>
+            Consumers MUST use the "type" string as the primary identifier for the problem type; the "title" string is advisory and included only for users who are not aware of the semantics of the URI and do not have the ability to discover them.
+          type: string
+          nullable: false
+        status:
+          description: |
+            The HTTP status code ([RFC7231], Section 6) generated by the origin server for this occurrence of the problem.
+          type: integer
+          format: int32
+          nullable: false
+        type:
+          description: |
+            A URI reference [RFC3986] that identifies the problem type. When this member is not present, its value is assumed to be "about:blank".
+          type: string
+          nullable: false
+          default: 'about:blank'
+        detail:
+          description: |
+            A human-readable explanation specific to this occurrence of the problem.
+          type: string
+          nullable: false
+        instance:
+          description: |
+            A URI reference that identifies the specific occurrence of the problem.  It may or may not yield further information if dereferenced.
+          type: string
+          nullable: false
+    # com.anaptecs.jeaf.timetable.api.TimetableResponse
+    TimetableResponse:
+      type: object
+      additionalProperties: false
+      properties:
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Message'
+        trips:
+          type: array
+          items:
+            $ref: '#/components/schemas/Trip'
+    # com.anaptecs.jeaf.timetable.api.Trip
+    Trip:
+      type: object
+      additionalProperties: false
+      required:
+        - legs
+      properties:
+        legs:
+          type: array
+          items:
+            $ref: '#/components/schemas/Leg'
+          minItems: 1
+
+    # com.anaptecs.jeaf.timetable.api.TransportMeans
+    TransportMeans:
+      type: string
+      enum:
+        - TRAIN
+        - BUS
+        - SHIP
+
+    # com.anaptecs.jeaf.timetable.api.VehicleType
+    VehicleType:
+      type: string
+      x-extensible-enum:
+        - TGV
+        - ICE
+        - IC
+        - RE
+        - S
+        - PEX
+
+      

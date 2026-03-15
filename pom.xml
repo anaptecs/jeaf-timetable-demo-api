@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.anaptecs.jeaf</groupId>
+		<artifactId>jeaf-generator-project-parent</artifactId>
+		<version>0.6.0</version>
+	</parent>
+
+	<groupId>com.anaptecs.jeaf.demo</groupId>
+	<artifactId>jeaf-timetable-demo-api</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+	<name>JEAF Timetable Demo API</name>
+
+
+	<properties>
+		<!-- UML package which will be the one that is considered during code generation. -->
+		<umlPackage>com.anaptecs.jeaf.timetable.api</umlPackage>
+
+		<!-- Name of the main file of the UML model -->
+		<umlModelFile>JEAF_Timetable_Demo_API.uml</umlModelFile>
+
+		<!-- PROTECTED REGION ID(xmi-properties:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
+		<!-- 
+			Directory on local file system from where XMI files should be read. 
+			Property only needs to be set in case that you want read XMI files from local file system
+		-->
+		<my.xmiDirectory>./jeaf-timetable-demo-api-uml/xmi</my.xmiDirectory>
+		
+		<!--
+			Properties are use to specify the Maven artifact from which the XMI files should be read.
+			Properties only need to be set in case that you want read XMI files from a Maven artifact.
+		-->
+		<my.modelArtifactGroupID>TODO</my.modelArtifactGroupID>
+		<my.modelArtifactArtifactID>TODO</my.modelArtifactArtifactID>
+		<my.modelArtifactXMIPath>xmi</my.modelArtifactXMIPath>
+		<!-- PROTECTED REGION END -->
+
+	</properties>
+
+
+	<!-- "Extend" profiles from parent POM for usages of XMI files from local file system and Maven artifact usage. -->
+	<profiles>
+		<profile>
+			<id>RunCodeGenerationFromXMIFile</id>
+			<properties>
+				<!-- Read UML model (XMI files) directly from local file system -->
+				<xmiDirectory>${my.xmiDirectory}</xmiDirectory>
+			</properties>
+		</profile>
+		<profile>
+			<id>RunCodeGenerationFromModelArtifact</id>
+			<properties>
+				<!-- Read UML model from Maven artifact. -->
+				<modelArtifactGroupID>${my.modelArtifactGroupID}</modelArtifactGroupID>
+				<modelArtifactArtifactID>${my.modelArtifactArtifactID}</modelArtifactArtifactID>
+				<modelArtifactXMIPath>${my.modelArtifactXMIPath}</modelArtifactXMIPath>
+			</properties>
+		</profile>
+		<profile>
+			<id>UpdateMavenProjectStructureFromXMIFile</id>
+			<properties>
+				<!-- Read UML model (XMI files) directly from local file system -->
+				<xmiDirectory>${my.xmiDirectory}</xmiDirectory>
+			</properties>
+		</profile>
+		<profile>
+			<id>UpdateMavenProjectStructureFromModelArtifact</id>
+			<properties>
+				<!-- Read UML model from Maven artifact. -->
+				<modelArtifactGroupID>${my.modelArtifactGroupID}</modelArtifactGroupID>
+				<modelArtifactArtifactID>${my.modelArtifactArtifactID}</modelArtifactArtifactID>
+				<modelArtifactXMIPath>${my.modelArtifactXMIPath}</modelArtifactXMIPath>
+			</properties>
+		</profile>
+	</profiles>
+
+
+	<modules>
+		<module>jeaf-timetable-demo-api-bom</module>
+		<module>jeaf-timetable-demo-api-uml</module>
+		<module>jeaf-timetable-demo-api-open-api</module>
+		<module>jeaf-timetable-demo-api-java</module>
+		<module>jeaf-timetable-demo-api-java-runtime</module>
+		<module>jeaf-timetable-demo-api-services</module>
+		<module>jeaf-timetable-demo-api-rest-client</module>
+		<module>jeaf-timetable-demo-api-rest-client-starter</module>
+		<module>jeaf-timetable-demo-api-rest-controller</module>
+		<module>jeaf-timetable-demo-api-rest-controller-starter</module>
+		<module>jeaf-timetable-demo-api-integration-test</module>
+	</modules>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.anaptecs.jeaf.demo</groupId>
+				<artifactId>jeaf-timetable-demo-api-uml</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anaptecs.jeaf.demo</groupId>
+				<artifactId>jeaf-timetable-demo-api-open-api</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anaptecs.jeaf.demo</groupId>
+				<artifactId>jeaf-timetable-demo-api-java</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anaptecs.jeaf.demo</groupId>
+				<artifactId>jeaf-timetable-demo-api-java-runtime</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anaptecs.jeaf.demo</groupId>
+				<artifactId>jeaf-timetable-demo-api-services</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anaptecs.jeaf.demo</groupId>
+				<artifactId>jeaf-timetable-demo-api-rest-client</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anaptecs.jeaf.demo</groupId>
+				<artifactId>jeaf-timetable-demo-api-rest-client-starter</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anaptecs.jeaf.demo</groupId>
+				<artifactId>jeaf-timetable-demo-api-rest-controller</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anaptecs.jeaf.demo</groupId>
+				<artifactId>jeaf-timetable-demo-api-rest-controller-starter</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+	<dependencies>
+	</dependencies>
+</project>

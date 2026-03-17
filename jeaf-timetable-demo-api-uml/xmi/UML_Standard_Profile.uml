@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MagicDrawProfile="http://UML_Standard_Profile/MagicDraw_Profile/_be00301_1073394351331_445580_2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http://UML_Standard_Profile/MagicDraw_Profile/_be00301_1073394351331_445580_2 UML_Standard_Profile.MagicDraw_Profile.profile.uml#_2emH4hY-EfGMJ_pXoEL-UQ">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MagicDrawProfile="http://UML_Standard_Profile/MagicDraw_Profile/_be00301_1073394351331_445580_2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http://UML_Standard_Profile/MagicDraw_Profile/_be00301_1073394351331_445580_2 UML_Standard_Profile.MagicDraw_Profile.profile.uml#_1OsE0yG-EfGfMoCKFzC6jA">
   <uml:Model xmi:id="a0aa1fdc-3aae-4c51-9892-c215f623a718" name="Model" viewpoint="">
     <packageImport xmi:id="_0primitiveTypesModel">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -11,12 +11,12 @@
       <ownedComment xmi:id="271af6df-4dd6-46bb-a01b-b360d21309c5" body="UML Standard Profile contains a UML metamodel (metaclasses without properties and associations), Standard UML stereotypes defined in the annex C of UML specification, validation suites for UML model correctness and completeness checking, and stereotypes used by MagicDraw internally." annotatedElement="cee93c17-72be-4f1a-9890-ca612787f8d4"/>
     </packagedElement>
     <profileApplication xmi:id="7279c57e-1301-4387-9c5e-fdaae72b924fprofileApplicationModel">
-      <eAnnotations xmi:id="_2fEpBxY-EfGMJ_pXoEL-UQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_2emH4hY-EfGMJ_pXoEL-UQ"/>
+      <eAnnotations xmi:id="_1QFvpSG-EfGfMoCKFzC6jA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_1OsE0yG-EfGfMoCKFzC6jA"/>
       </eAnnotations>
       <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#7279c57e-1301-4387-9c5e-fdaae72b924f"/>
     </profileApplication>
   </uml:Model>
-  <MagicDrawProfile:auxiliaryResource xmi:id="_2fEpCBY-EfGMJ_pXoEL-UQ" base_Element="a0aa1fdc-3aae-4c51-9892-c215f623a718"/>
-  <MagicDrawProfile:auxiliaryResource xmi:id="_2fccdBY-EfGMJ_pXoEL-UQ" base_Element="cee93c17-72be-4f1a-9890-ca612787f8d4"/>
+  <MagicDrawProfile:auxiliaryResource xmi:id="_1QFvpiG-EfGfMoCKFzC6jA" base_Element="a0aa1fdc-3aae-4c51-9892-c215f623a718"/>
+  <MagicDrawProfile:auxiliaryResource xmi:id="_1Qf_USG-EfGfMoCKFzC6jA" base_Element="cee93c17-72be-4f1a-9890-ca612787f8d4"/>
 </xmi:XMI>

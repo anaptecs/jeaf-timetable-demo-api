@@ -14,9 +14,21 @@
 
 	<properties>
 		<generateOpenAPISpec>true</generateOpenAPISpec>
+
+		<!-- Custom section for properties -->
+		<!-- PROTECTED REGION ID(properties:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api-open-api) ENABLED START -->
+		<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+		<!-- Add your custom properties here -->
+		<!-- PROTECTED REGION END -->
 	</properties>
 
 
 	<dependencies>
+
+		<!-- Custom section for dependencies -->
+		<!-- PROTECTED REGION ID(dependencies:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api-open-api) ENABLED START -->
+		<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+		<!-- Add your custom properties here -->
+		<!-- PROTECTED REGION END -->
 	</dependencies>
 </project>

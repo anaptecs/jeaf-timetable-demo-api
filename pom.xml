@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.anaptecs.jeaf</groupId>
 		<artifactId>jeaf-generator-project-parent</artifactId>
-		<version>0.6.0</version>
+		<version>0.6.1-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.anaptecs.jeaf.demo</groupId>
@@ -15,6 +15,52 @@
 
 	<packaging>pom</packaging>
 	<name>JEAF Timetable Demo API</name>
+
+
+	<!-- Custom section for information about developers -->
+	<!-- PROTECTED REGION ID(developers:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
+	<developers>
+		<developer>
+			<name>JEAF Development Team</name>
+			<email>jeaf@anaptecs.ch</email>
+			<organization>anaptecs GmbH</organization>
+			<organizationUrl>http://www.anaptecs.ch</organizationUrl>
+		</developer>
+	</developers>
+	<!-- PROTECTED REGION END -->
+
+
+	<scm>
+		<connection>scm:git:https://github.com/anaptecs/jeaf-timetable-demo-api.git</connection>
+		<developerConnection>scm:git:https://github.com/anaptecs/jeaf-timetable-demo-api.git</developerConnection>
+		<url>https://github.com/anaptecs/jeaf-timetable-demo-api</url>
+		<tag>HEAD</tag>
+	</scm>
+
+
+	<!-- Custom section for distribution management -->
+	<distributionManagement>
+		<!-- PROTECTED REGION ID(distributionManagement:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
+		<snapshotRepository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/anaptecs/jeaf-timetable-demo-api</url>
+		</snapshotRepository>
+		<!-- PROTECTED REGION END -->
+	</distributionManagement>
+
+
+	<!-- Custom section for license information -->
+	<!-- PROTECTED REGION ID(licenses:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
+	<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+	<!--
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	-->
+	<!-- PROTECTED REGION END -->
 
 
 	<properties>
@@ -40,6 +86,11 @@
 		<my.modelArtifactXMIPath>xmi</my.modelArtifactXMIPath>
 		<!-- PROTECTED REGION END -->
 
+		<!-- Custom section for properties -->
+		<!-- PROTECTED REGION ID(properties:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
+		<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+		<!-- Add your custom properties here -->
+		<!-- PROTECTED REGION END -->
 	</properties>
 
 
@@ -77,6 +128,11 @@
 				<modelArtifactXMIPath>${my.modelArtifactXMIPath}</modelArtifactXMIPath>
 			</properties>
 		</profile>
+
+		<!-- Section for custom profile entries -->
+		<!-- PROTECTED REGION ID(profiles:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
+		<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+		<!-- PROTECTED REGION END -->
 	</profiles>
 
 
@@ -142,10 +198,30 @@
 				<artifactId>jeaf-timetable-demo-api-rest-controller-starter</artifactId>
 				<version>0.1.0-SNAPSHOT</version>
 			</dependency>
+			<!-- Section for custom dependency management entries -->
+			<!-- PROTECTED REGION ID(dependencyManagement:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
+			<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+			<!-- PROTECTED REGION END -->
 		</dependencies>
 	</dependencyManagement>
 
 
 	<dependencies>
+
+		<!-- Custom section for dependencies -->
+		<!-- PROTECTED REGION ID(dependencies:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api-) ENABLED START -->
+		<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+		<!-- Add your custom properties here -->
+		<!-- PROTECTED REGION END -->
 	</dependencies>
+
+
+	<build>
+		<plugins>
+			<!-- Section for custom plugin entries -->
+			<!-- PROTECTED REGION ID(plugins:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api) ENABLED START -->
+			<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+			<!-- PROTECTED REGION END -->
+		</plugins>
+	</build>
 </project>

@@ -15,6 +15,12 @@
 	<properties>
 		<generateServiceInterfaces>true</generateServiceInterfaces>
 		<generateReactiveServiceInterfaces>true</generateReactiveServiceInterfaces>
+
+		<!-- Custom section for properties -->
+		<!-- PROTECTED REGION ID(properties:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api-services) ENABLED START -->
+		<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+		<!-- Add your custom properties here -->
+		<!-- PROTECTED REGION END -->
 	</properties>
 
 
@@ -27,5 +33,11 @@
 			<groupId>io.projectreactor</groupId>
 			<artifactId>reactor-core</artifactId>
 		</dependency>
+
+		<!-- Custom section for dependencies -->
+		<!-- PROTECTED REGION ID(dependencies:com.anaptecs.jeaf.demo:jeaf-timetable-demo-api-services) ENABLED START -->
+		<!-- Everything that is within this protection area will remain unchanged by JEAF Generator. -->
+		<!-- Add your custom properties here -->
+		<!-- PROTECTED REGION END -->
 	</dependencies>
 </project>
